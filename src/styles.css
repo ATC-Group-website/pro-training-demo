@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+@layer primeng;
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* custom scroll bar  */
+/* ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb1f2f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(152, 11, 11);
+} */
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* Prevent vertical scrolling */
+}
+
+.hvr-sweep-to-right {
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: color 0.5s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #f9eeee;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.5s ease-out;
+}
+.hvr-sweep-to-right:hover:before {
+  transform: scaleX(1);
+}
+  

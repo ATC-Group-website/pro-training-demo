@@ -1,0 +1,281 @@
+<section class="bg-[#F9F7F7]">
+  <div class="mx-auto flex max-w-screen-2xl flex-col p-5 md:flex-row">
+    <div class="w-full md:w-1/3">
+      <h2
+        class="border-0 border-l-[12px] border-solid border-primary p-4 text-4xl font-bold"
+      >
+        Subscribe to our News-Letter Now!
+      </h2>
+      <p class="pl-7 text-2xl text-grayTitle">
+        Stay updated with the latest news and events in taxes and financial
+        issues.
+      </p>
+    </div>
+    <div class="flex w-full items-center p-4 md:w-2/3">
+      <form (ngSubmit)="onSubmit(email)" #email="ngForm" class="w-full">
+        <div class="mb-5">
+          <input
+            type="email"
+            name="email"
+            pInputText
+            class="block h-[50px] w-full rounded-md bg-white p-3 text-2xl placeholder:text-center focus:border-none focus:outline-none"
+            autocomplete="email"
+            required
+            ngModel
+            #email="ngModel"
+            [style]="{}"
+            [ngClass]="{
+              'ng-dirty': email.touched,
+              'ng-invalid': email.invalid && email.touched,
+            }"
+            placeholder="Enter your email"
+          />
+        </div>
+        <p-button
+          label="Sign Up"
+          [disabled]="email.invalid"
+          class="h-[50px]"
+          [style]="{
+            width: '100%',
+            backgroundColor: '#EB1F2F',
+          }"
+          type="submit"
+        />
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="bg-black">
+    <div
+      class="mx-auto grid max-w-screen-2xl grid-cols-1 gap-10 px-4 py-8 md:grid-cols-2 lg:grid-cols-4"
+    >
+      <div class="flex max-w-[200px] flex-col gap-10">
+        <img
+          src="atc_group_white2.jpg"
+          alt="ATC Group"
+          class="h-[150px] w-[200px] object-cover"
+        />
+        <div>
+          <ul class="m-0 flex list-none justify-between gap-3 p-0">
+            <li>
+              <a
+                href="https://www.facebook.com/p/ATC-Group-100067854885668"
+                target="_blank"
+              >
+                <span class="sr-only">Facebook</span>
+                <i
+                  class="fa-brands fa-square-facebook fa-2xl text-white hover:text-primary"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/atcgroup.eg" target="_blank">
+                <span class="sr-only">Instagram</span>
+                <i
+                  class="fa-brands fa-square-instagram fa-2xl text-white hover:text-primary"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/atcgroupmiddleeast"
+                target="_blank"
+              >
+                <span class="sr-only">Linked in</span>
+                <i
+                  class="fa-brands fa-linkedin fa-2xl text-white hover:text-primary"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/ATCGroup143796" target="_blank">
+                <span class="sr-only">X</span>
+                <i
+                  class="fa-brands fa-square-x-twitter fa-2xl text-white hover:text-primary"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h5
+          class="mb-2 mt-0 border-0 border-l-[6px] border-solid border-primary px-5 py-2 text-xl text-white"
+        >
+          Quick Links
+        </h5>
+        <div class="text-white">
+          <ul class="flex list-none flex-row gap-14 pl-0">
+            <div class="space-y-4">
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/about-us"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/services"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Services
+                </a>
+              </li>
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/insights"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Insights
+                </a>
+              </li>
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/careers"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Careers
+                </a>
+              </li>
+            </div>
+            <div class="space-y-4">
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/pro-training"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Pro-Training
+                </a>
+              </li>
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/contact-us"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li
+                class="flex cursor-pointer items-center gap-3 text-lg transition-colors hover:text-primary"
+              >
+                <i class="fa-solid fa-circle text-xs text-primary"></i>
+                <a
+                  routerLink="/locations"
+                  class="text-white no-underline hover:text-primary"
+                >
+                  Locations
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h5
+          class="mb-2 mt-0 border-0 border-l-[6px] border-solid border-primary px-5 py-2 text-xl text-white"
+        >
+          Head Office
+        </h5>
+        <div class="my-4 flex flex-col space-y-4 text-white">
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-map-location-dot text-primary"></i>
+            <span class="text-lg"> 21,23 Giza St, Nile Tower </span>
+          </span>
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span class="text-lg"> (202) 35707030\33\41\49 </span>
+          </span>
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-fax text-primary"></i>
+            <span class="text-lg"> (202) 35707096 </span>
+          </span>
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-primary"></i>
+            <a
+              href="mailto:info@atc.com.eg"
+              class="cursor-pointer text-lg text-white no-underline hover:text-primary"
+            >
+              info&#64;atc.com.eg
+            </a>
+          </span>
+        </div>
+      </div>
+      <div>
+        <h5
+          class="mb-2 mt-0 border-0 border-l-[6px] border-solid border-primary px-5 py-2 text-xl text-white"
+        >
+          Other Websites
+        </h5>
+
+        <div class="my-4 flex flex-col space-y-4 text-white">
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-arrow-up-right-from-square text-primary"></i>
+            <a
+              href="https://atcprotraining.com"
+              target="_blank"
+              class="text-lg text-white no-underline hover:text-primary"
+            >
+              ATC Pro-Training
+            </a>
+          </span>
+
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-arrow-up-right-from-square text-primary"></i>
+            <a
+              href="https://www.atcksa.com"
+              target="_blank"
+              class="text-lg text-white no-underline hover:text-primary"
+            >
+              ATC KSA
+            </a>
+          </span>
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-arrow-up-right-from-square text-primary"></i>
+            <a
+              href="https://atcemirates.com"
+              target="_blank"
+              class="text-lg text-white no-underline hover:text-primary"
+            >
+              ATC UAE
+            </a>
+          </span>
+          <span class="flex items-center gap-3">
+            <i class="fa-solid fa-arrow-up-right-from-square text-primary"></i>
+            <a
+              href="https://www.eate-eg.com"
+              target="_blank"
+              class="text-lg text-white no-underline hover:text-primary"
+            >
+              Egyptian Association of Tax Experts
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary p-2 text-center font-bold text-white">
+    This website was developed by ©ATC GROUP
+  </div>
+</footer>
