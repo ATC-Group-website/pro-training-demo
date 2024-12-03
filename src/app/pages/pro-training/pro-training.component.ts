@@ -6,8 +6,13 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
 @Component({
   selector: 'app-pro-training',
   standalone: true,
-  imports: [TopBarComponent, NavBarComponent, FooterComponent, ImageModule],
+  imports: [
+    TopBarComponent,
+    NavBarComponent,
+    FooterComponent,
+    ImageModule,
+  ],
   templateUrl: './pro-training.component.html',
   styleUrl: './pro-training.component.css',
 })
-export class ProTrainingComponent {}
+export class ProTrainingComponent {} 
